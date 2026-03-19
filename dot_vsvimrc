@@ -1,0 +1,73 @@
+set autoindent expandtab tabstop=4 shiftwidth=4
+set number relativenumber smartcase incsearch
+set vb
+
+let mapleader = "<space>"
+
+nmap <esc> :noh<CR>
+
+" move lines
+nmap <A-j> :m .+1<cr>==
+nmap <A-k> :m .-2<cr>==
+imap <A-j> <Esc>:m .+1<cr>==i
+imap <A-k> <Esc>:m .-2<cr>==i
+
+" fix Cannot retrieve the previous Visual Span
+"vnoremap <A-j> :m '>+1<cr>gv=gv
+"vnoremap <A-k> :m '<-2<cr>gv=gv
+vmap <A-j> dpV']=gv
+vmap <A-k> d-PV']=gv
+
+nmap <leader>x :q<cr>
+
+nmap S "_diwP
+nmap <leader>S "_diw"+P
+
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+nnoremap <leader>y "+y
+nnoremap <leader>Y "+yy
+
+vnoremap <leader>p "+p
+vnoremap <leader>P "+P
+vnoremap <leader>y "+y
+vnoremap <leader>Y "+yy
+
+nnoremap <leader>w :w<cr>
+
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+nmap <C-d> <C-d>zz
+nmap <C-u> <C-u>zz
+
+nnoremap J mzJ`z
+
+vmap <leader>s :vsc Edit.SurroundWith<cr>
+
+nmap s :vsc Tools.InvokePeasyMotionTwoCharJump<cr>
+vmap s :vsc Tools.InvokePeasyMotionTwoCharJump<cr>
+nmap g] :vsc Edit.FindAllReferences<cr>
+nmap <C-]> :vsc Edit.GoToImplementation<cr>
+nmap gc :vsc Edit.ToggleLineComment<cr>
+nmap <leader>e :vsc View.SolutionExplorer<cr>
+nmap <leader>ff :vsc Edit.GoToFile<cr>
+nmap <leader>lf :vsc Edit.FormatDocument<cr>
+nmap <leader>lr :vsc Refactor.Rename<cr>
+nmap <leader>la :vsc EditorContextMenus.CodeWindow.QuickActionsForPosition<cr>
+nmap H :vsc Window.PreviousTab<cr>
+nmap L :vsc Window.NextTab<cr>
+nmap <C-w> :vsc Edit.WordDeleteToStart<cr>
+
+nmap <leader>dp :vsc Debug.ToggleBreakpoint<cr>
+nmap <leader>dr :vsc Debug.StartWithoutDebugging<cr>
+nmap <leader>db :vsc Debug.Start<cr>
+nmap <leader>dq :vsc Debug.StopDebugging<cr>
+nmap <leader>dd :vsc Debug.StepOver<cr>
+nmap <leader>di :vsc Debug.StepInto<cr>
+nmap <leader>do :vsc Debug.StepOut<cr>
+nmap <leader>dc :vsc Debug.RunToCursor<cr>
+
+" Copilot
+noremap <C-i> :vsc Ask.Copilot<cr>
+noremap <C-l> :vsc View.GitHub.Copilot.Chat<cr>
