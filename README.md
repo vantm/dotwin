@@ -30,6 +30,3 @@ pacman -Sy \
 
 Install `lazygit`
 
-## Note
-
-Microsoft Notepad is suck! Don't use it!
