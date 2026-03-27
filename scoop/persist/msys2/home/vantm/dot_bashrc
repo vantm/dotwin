@@ -20,8 +20,10 @@ _edit_no_execute() {
 
 bind -m vi-command -x '"v": _edit_no_execute'
 
-alias v=nvim
-alias ll="ls -la"
+alias   v=nvim
+alias  ll="ls -la"
+alias  ..="cd .."
+alias ...="cd ../.."
 
 eval "$(zoxide init --cmd cd bash)"
 eval "$(fzf --bash)"
