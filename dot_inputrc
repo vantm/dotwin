@@ -1,7 +1,0 @@
-set editing-mode vi
-set show-mode-in-prompt on
-
-set vi-ins-mode-string "\033[1;32m>"
-set vi-cmd-mode-string "\033[1;33m<"
-
-set bell-style none
