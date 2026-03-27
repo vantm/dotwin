@@ -32,6 +32,7 @@ pacman -Sy \
   mingw-w64-ucrt-x86_64-neovim \
   mingw-w64-ucrt-x86_64-ripgrep \
   mingw-w64-ucrt-x86_64-zoxide
+```
 
 ## Note
 
