@@ -1,0 +1,8 @@
+set editing-mode vi
+set show-mode-in-prompt on
+set colored-stats on
+
+set vi-ins-mode-string "\1\e[1;32m\2>"
+set vi-cmd-mode-string "\1\e[1;33m\2<"
+
+set bell-style none
