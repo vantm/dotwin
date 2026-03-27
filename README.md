@@ -10,7 +10,9 @@ Remove system apps if installed:
 Scoop apps:
 
 ```pwsh
-scoop install 0xProto-NF mingit less 7zip aria2 chezmoi msys2 windows-terminal
+scoop install `
+    mingit less 7zip aria2 chezmoi `
+    msys2 windows-terminal 0xProto-NF 
 ```
 
 UCRT apps:
