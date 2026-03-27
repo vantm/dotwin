@@ -2,23 +2,16 @@
 
 ## Installation
 
+Remove system apps if installed:
+
+- `windows-terminal`
+- `git`
+
 Scoop apps:
 
-```text
-Name             Version      Source       Updated             Info
-----             -------      ------       -------             ----
-0xProto-NF       3.4.0        nerd-fonts   2026-03-19 22:27:29
-7zip             26.00        main         2026-03-11 06:32:50
-aria2            1.37.0-1     main         2026-03-11 06:35:06
-brave            1.87.192     extras       2026-03-11 06:44:36
-chezmoi          2.70.0       main         2026-03-19 00:29:32
-glazewm          3.10.0       extras       2026-03-19 00:29:00
-mingit           2.53.0.2     main         2026-03-27 10:51:15
-msys2            2026-03-22   main         2026-03-27 11:01:36
-pstools          2.51         sysinternals 2026-03-13 02:38:42
-telegram         6.6.2        extras       2026-03-25 03:03:32
-unikey           4.6-rc2      vantm        2026-03-11 06:44:38
-windows-terminal 1.24.10621.0 extras       2026-03-27 11:25:03
+```pwsh
+scoop install 0xProto-NF `
+  7zip aria2 chezmoi mingit msys2 windows-terminal
 ```
 
 UCRT apps:
@@ -34,6 +27,8 @@ pacman -Sy \
   mingw-w64-ucrt-x86_64-zoxide
 ```
 
+Install `lazygit`
+
 ## Note
 
-Microsoft Notepad is suck!
+Microsoft Notepad is suck! Don't use it!
